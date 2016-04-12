@@ -1,8 +1,8 @@
 <?php
-namespace Simon\Auth\Login;
+namespace Simon\Auth\Login\Specific;
 use Simon\Auth\Login\Interfaces\LoginInterface;
-use Simon\Auth\AbsAuth;
 use Simon\Auth\Models\Auth;
+use Simon\Auth\AbsAuth;
 class LoginSpecific extends AbsAuth implements LoginInterface
 {
 	
