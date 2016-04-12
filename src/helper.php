@@ -5,7 +5,7 @@ if (!function_exists('simon_auth_config'))
 	{
 		$Filesystem = new \Illuminate\Filesystem\Filesystem();
 		$path = dirname(__DIR__).'/config/auth.php';
-		$Repository = new \Illuminate\Config\Repository($Filesystem->get($path));
+		$Repository = new \Illuminate\Config\Repository($Filesystem->getRequire($path));
 		if (empty($key) && empty($default))
 		{
 			return $Repository;

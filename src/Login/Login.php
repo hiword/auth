@@ -1,12 +1,17 @@
 <?php
 namespace Simon\Auth\Login;
-class Login {
+use Simon\Auth\Models\Auth;
+class Login
+{
 	
-// 	protected 
+	protected $login = null;
 	
 	public function __construct()
 	{
-		var_dump(simon_auth_config('auth.username'));
+		$loginClass = simon_auth_config('specific.login');
+		$this->login = new $loginClass(new Auth());
+		
+		$this->login->checkUsername('abc');
 	}
 	
 }

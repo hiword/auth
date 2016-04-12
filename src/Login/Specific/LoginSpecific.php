@@ -28,7 +28,7 @@ class LoginSpecific extends AbsAuth implements LoginInterface
 	public function checkUsername($name)
 	{
 		// TODO Auto-generated method stub
-		$model = $this->model->where($this->config->get('..'),$name)->first();
+		$model = $this->model->where(simon_auth_config('username'),$name)->first();
 		if(empty($model))
 		{
 			throw new \Exception('user is not exists');
