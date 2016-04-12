@@ -2,7 +2,7 @@
     "name": "simon/auth",
     "description": "a public global auth",
     "keywords": ["auth", "crcms", "laravel"],
-    "homepage": "http://crcms.cn",
+    "homepage": "https://github.com/hiword/auth",
     "license" : "MIT",
     "authors": [
         {
