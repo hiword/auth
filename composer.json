@@ -13,7 +13,8 @@
     "require": {
         "php": ">=5.5.9",
         "illuminate/config": "5.2.*",
-        "illuminate/database": "5.2.*"
+        "illuminate/database": "5.2.*",
+        "catfan/Medoo": "^1.0"
     },
     "require-dev": {
     },
